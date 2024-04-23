@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+    --text-color: #312d64;
+    --title-color: #b52184;
+    --background-color: #f9f4fb;
+    --gradiente-bg: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: var(--background-color);
+}
+
+header {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    background: var(--background-color);
+}
+
+.astronauta {
+    width: 60rem;
+    height: 5%;
+    margin: 0 3rem 10rem 0;
+}
+
+.txt h1 {
+    color: var(--title-color);
+    font-size: 5.8rem;
+    font-weight: 900;
+    line-height: normal;
+
+    margin-top: 1.7rem;
+}
+
+.txt p {
+    color: var(--text-color);
+
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    margin-bottom: 3.5rem;
+}
+
+.seta {
+    margin-top: 17rem;
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 9.3rem;
+}
+
+main {
+    background: var(--gradiente-bg);
+
+    padding: 5.6rem 4rem 5.6rem 4rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 5rem;
+}
+
+.box:hover {
+    scale: 1.1;
+}
+
+.box {
+    transition: 0.2s;
+    background: var(--background-color);
+
+    width: 35.2rem;
+    height: 38rem;
+
+    border-radius: 2rem;
+    padding: 2.6rem;
+}
+
+.box img {
+    margin-bottom: 3rem;
+}
+
+.box h1 {
+    color: var(--title-color);
+
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+    margin-bottom: 2rem;
+}
+
+.box p {
+    color: var(--text-color);
+
+    width: 26.5rem;
+
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+
+    background-image: url('/assets/image\ 11976.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.form01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    margin: 9.5rem;
+}
+
+.form01 h1 {
+    color: var(--title-color);
+
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+    margin-bottom: 4.3rem;
+}
+
+.name {
+    background-image: url(./assets/person.svg);
+    background-repeat: no-repeat;
+    background-size: 2.4rem;
+    background-position: 1.4rem;
+}
+
+.email {
+    background-image: url(./assets/at.svg);
+    background-repeat: no-repeat;
+    background-size: 2.4rem;
+    background-position: 1.4rem;
+}
+
+.form01 input::placeholder {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+
+.form01 input {
+    width: 59.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 1.6rem 1.2rem 5rem;
+
+    gap: 12px;
+
+    margin-bottom: 2.4rem;
+
+    border-radius: 1.6rem;
+    border: 0.15rem solid var(--text-color);
+}
+
+textarea {
+    min-width: 59.5rem;
+    max-height: 30rem;
+    min-height: 20rem;
+    border-radius: 1.6rem;
+    margin-bottom: 2.4rem;
+    max-width: 59.5rem;
+    padding: 1.6rem;
+    border: 0.15rem solid var(--text-color);
+}
+
+textarea p {
+    color: #312d64;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.form01 button {
+    background: var(--gradiente-bg);
+    color: var(--background-color);
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 15.1rem;
+    height: 4.5rem;
+    padding: 1.6rem;
+
+    border-radius: 1.6rem;
+
+    border: none;
+
+    gap: 1rem;
+    cursor: pointer;
+}
+
+footer {
+    background: var(--gradiente-bg);
+    height: 7.8rem;
+
+    padding: 1.6rem;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--background-color);
+}
+
+@media (max-width: 1024px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+
+        padding: 0;
+        height: 100%;
+    }
+
+    .astronauta {
+        width: 36rem;
+        height: 5%;
+        margin: 0;
+    }
+
+    .txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .txt h1 {
+        font-size: 3.2rem;
+    }
+
+    .txt p {
+        font-size: 2rem;
+    }
+
+    .seta {
+        margin: 0;
+        size: 1.8rem;
+    }
+
+    .box:hover {
+        scale: 1;
+    }
+    main {
+        background: var(--gradiente-bg);
+
+        padding: 5.6rem 4rem 5.6rem 4rem;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        gap: 5rem;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+
+        background-image: none;
+        padding: 5rem;
+    }
+
+    .form01 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+        width: 100%;
+        margin: 9.5rem;
+    }
+
+    .form01 input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.2rem 1.6rem 1.2rem 5rem;
+
+        gap: 12px;
+
+        margin-bottom: 2.4rem;
+
+        border-radius: 1.6rem;
+        border: 0.15rem solid var(--text-color);
+    }
+}
